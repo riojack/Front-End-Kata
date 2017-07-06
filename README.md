@@ -31,3 +31,6 @@ As you tackle the exercise outlined in the this document, please keep in mind th
 
 **I was hoping to design a site from scratch. Can I do that?**
 *The intent of this exercise is to blend the realms of DX and Development within a reasonable time frame. While we'd love to see your scratch design skills, we will provide a different exercise sometime in the future for flexing those muscles.*
+
+**Do I need to write tests?**
+*Treat it like you any Pillar project; Namely, if you're writing code, configuring tools, or laying out pages that provide business value, they should be tested. We leave it up to your hands to decide the appropriate type and level of testing.*
