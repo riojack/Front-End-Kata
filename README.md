@@ -23,14 +23,14 @@ As you tackle the exercise outlined in the this document, please keep in mind th
 - What is the overall creative thinking and consistency in flow of experience?
 
 ## FAQ
-**Can we use Sass, LESS, or some other CSS framework?**
-    *Yes, we care only that the markup, styles, and code are clean, readable, and get the job done. If a framework helps you achieve that, please use it.*
+###Can we use Sass, LESS, or some other CSS framework?
+*Yes, we care only that the markup, styles, and code are clean, readable, and get the job done. If a framework helps you achieve that, please use it.*
 
 **How long should I spend on this exercise?**
-    *Somewhere between 1-3 hours, depending on your speed and familiarity with the domain.*
+*Somewhere between 1-3 hours, depending on your speed and familiarity with the domain.*
 
 **I was hoping to design a site from scratch. Can I do that?**
-    *The intent of this exercise is to blend the realms of DX and Development within a reasonable time frame. While we'd love to see your scratch design skills, we will provide a different exercise sometime in the future for flexing those muscles.*
+*The intent of this exercise is to blend the realms of DX and Development within a reasonable time frame. While we'd love to see your scratch design skills, we will provide a different exercise sometime in the future for flexing those muscles.*
 
 **Do I need to write tests?**
-    *Treat it like you any Pillar project; Namely, if you're writing code, configuring tools, or laying out pages that provide business value, they should be tested. We leave it up to your hands to decide the appropriate type and level of testing.*
+*Treat it like you any Pillar project; Namely, if you're writing code, configuring tools, or laying out pages that provide business value, they should be tested. We leave it up to your hands to decide the appropriate type and level of testing.*
