@@ -19,4 +19,8 @@ app.get('/react-dom.js', (req, res) => {
   res.sendFile('./node_modules/react-dom/dist/react-dom.min.js', sendFileCfg);
 });
 
+app.get('/application.js', (req, res) => {
+  res.sendFile('./dist/application.js', sendFileCfg);
+});
+
 app.listen(port, () => console.log(`Started example server on port ${port}.\nVisit http://localhost:${port}/ in your browser.`));
