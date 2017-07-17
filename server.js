@@ -1,12 +1,22 @@
 let express = require('express'),
-  app = express();
+  app = express(),
+
+  sendFileCfg = {
+    root: __dirname
+  };
 
 const port = 9300;
 
 app.get('/', (req, res) => {
-  res.sendFile('./example/index.html', {
-    root: __dirname
-  });
+  res.sendFile('./example/index.html', sendFileCfg);
+});
+
+app.get('/react.js', (req, res) => {
+  res.sendFile('./node_modules/react/dist/react.min.js', sendFileCfg);
+});
+
+app.get('/react-dom.js', (req, res) => {
+  res.sendFile('./node_modules/react-dom/dist/react-dom.min.js', sendFileCfg);
 });
 
 app.listen(port, () => console.log(`Started example server on port ${port}.\nVisit http://localhost:${port}/ in your browser.`));
