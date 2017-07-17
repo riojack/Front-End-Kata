@@ -12,8 +12,7 @@ module.exports = {
     sourcePrefix: ''
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.jsx$|\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
@@ -24,7 +23,23 @@ module.exports = {
       {
         test: /\.css$|\.scss$/,
         exclude: /node_modules/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
+        loaders: [{
+          loader: 'style-loader'
+        }, {
+          loader: 'css-loader',
+          options: {
+            minimize: {
+              discardComments: {
+                removeAll: true
+              }
+            }
+          }
+        }, {
+          loader: 'sass-loader',
+          options: {
+            outputStyle: 'compressed'
+          }
+        }],
       }
     ]
   },

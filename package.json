@@ -31,9 +31,11 @@
     "jsx-loader": "^0.13.2",
     "mocha": "^3.4.2",
     "node-sass": "^4.5.3",
+    "normalize.css": "^7.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
+    "sass-loader": "^6.0.6",
     "sass-mediaqueries": "^1.6.1",
     "style-loader": "^0.18.2",
     "webpack": "^3.3.0"
