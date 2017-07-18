@@ -5,6 +5,10 @@ module.exports = {
     'application': __dirname + '/index.js',
     'application.min': __dirname + '/index.js'
   },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  },
   output: {
     path: __dirname + '/dist',
     pathinfo: true,
