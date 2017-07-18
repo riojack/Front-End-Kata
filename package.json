@@ -4,7 +4,7 @@
   "description": "Front-end kata for Pillar",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test",
+    "test": "mocha test --recursive",
     "build": "webpack -p"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "babel-register": "^6.24.1",
     "chai": "^4.1.0",
     "css-loader": "^0.28.4",
+    "css-modules-require-hook": "^4.0.6",
     "enzyme": "^2.9.1",
     "express": "^4.15.3",
     "file-loader": "^0.11.2",
