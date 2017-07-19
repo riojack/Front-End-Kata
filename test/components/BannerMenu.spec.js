@@ -18,4 +18,16 @@ describe('Banner Menu Component', () => {
     expect(renderedInstance.props()).to.have.property('className')
       .that.equals('banner-menu');
   });
+
+  describe('children', () => {
+    it('should have an element with a css class of "company-banner"', () => {
+      expect(renderedInstance.contains(<div className="company-banner" />))
+        .to.equal(true);
+    });
+
+    it('should have an element with a css class of "company-menu"', () => {
+      expect(renderedInstance.contains(<div className="company-menu" />))
+        .to.equal(true);
+    });
+  });
 });
