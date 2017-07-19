@@ -19,7 +19,7 @@ describe('Banner Menu Component', () => {
       .that.equals('banner-menu');
   });
 
-  describe('children', () => {
+  describe('company banner and menu', () => {
     it('should have an element with a css class of "company-banner"', () => {
       expect(renderedInstance.contains(<div className="company-banner" />))
         .to.equal(true);
