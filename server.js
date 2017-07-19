@@ -12,11 +12,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/react.js', (req, res) => {
-  res.sendFile('./node_modules/react/dist/react.min.js', sendFileCfg);
+  res.sendFile('./node_modules/react/dist/react.js', sendFileCfg);
 });
 
 app.get('/react-dom.js', (req, res) => {
-  res.sendFile('./node_modules/react-dom/dist/react-dom.min.js', sendFileCfg);
+  res.sendFile('./node_modules/react-dom/dist/react-dom.js', sendFileCfg);
 });
 
 app.get('/application.js', (req, res) => {
