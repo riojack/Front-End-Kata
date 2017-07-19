@@ -1,14 +1,7 @@
 @import '~normalize.css/normalize.css';
 @import '~sass-mediaqueries/media-queries';
 
-$pillar_logo_height: 117px;
-$pillar_logo_width: 288px;
-$pillar_logo_scaled_height: $pillar_logo_height / 3;
-$pillar_logo_scaled_width: $pillar_logo_width / 3;
-
-$extra_height: 40px;
-
-$pillar_blue: transparentize(#043285, 0.65);
+@import './vars';
 
 body {
   font-family: Arial, Helvetica, sans-serif;
