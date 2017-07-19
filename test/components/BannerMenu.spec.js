@@ -41,8 +41,8 @@ describe('Banner Menu Component', () => {
       let pageBanner = renderedInstance.children('.page-banner');
       
       expect(pageBanner.contains([
-        <span className="small-quote" />,
-        <span className="large-quote" />
+        <span className="small-quote">In the past, technology enabled the business.</span>,
+        <span className="large-quote">Today, technology is the business.</span>
       ])).to.equal(true);
     });
   });
