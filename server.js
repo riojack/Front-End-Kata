@@ -23,4 +23,6 @@ app.get('/application.js', (req, res) => {
   res.sendFile('./dist/application.js', sendFileCfg);
 });
 
+app.use('/assets', express.static('./assets'));
+
 app.listen(port, () => console.log(`Started example server on port ${port}.\nVisit http://localhost:${port}/ in your browser.`));
