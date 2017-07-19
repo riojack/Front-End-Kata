@@ -1,1 +1,30 @@
 @import '~normalize.css/normalize.css';
+@import '~sass-mediaqueries/media-queries';
+
+$pillar_logo_height: 117px;
+$pillar_logo_width: 288px;
+$pillar_logo_scaled_height: $pillar_logo_height / 3;
+$pillar_logo_scaled_width: $pillar_logo_width / 3;
+
+$extra_height: 40px;
+
+$pillar_blue: transparentize(#043285, 0.65);
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  .banner-menu {
+    > .company-banner {
+      background-image: url('/assets/pillar-logo_2017-07-18/pillar-logo@3x.png');
+      height: $pillar_logo_scaled_height + $extra_height;
+      width: 100%;
+
+      background-position: center center; 
+
+      background-size: $pillar_logo_scaled_width $pillar_logo_scaled_height;
+      background-repeat: no-repeat;
+
+      border-bottom: 1px solid $pillar_blue;
+    }
+  }
+}
