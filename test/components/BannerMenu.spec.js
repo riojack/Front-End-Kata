@@ -30,4 +30,20 @@ describe('Banner Menu Component', () => {
         .to.equal(true);
     });
   });
+
+  describe('page banner', () => {
+    it('should have an element with a css class of "page-banner"', () => {
+      expect(renderedInstance.children('.page-banner'))
+        .to.have.length(1);
+    });
+    
+    it('in the page banner, should have two spans with a css class of "small-quote" and "large-quote" for the the first and second respectively', () => {
+      let pageBanner = renderedInstance.children('.page-banner');
+      
+      expect(pageBanner.contains([
+        <span className="small-quote" />,
+        <span className="large-quote" />
+      ])).to.equal(true);
+    });
+  });
 });

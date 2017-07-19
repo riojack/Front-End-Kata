@@ -5,6 +5,10 @@ class BannerMenu extends React.Component {
     return <div className="banner-menu">
       <div className="company-banner" />
       <div className="company-menu" />
+      <div className="page-banner">
+        <span className="small-quote" />
+        <span className="large-quote" />
+      </div>
     </div>;
   }
 }
