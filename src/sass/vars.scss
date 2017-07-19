@@ -1,3 +1,8 @@
+/* Scaling values */
+$mobile: 3;
+$mobile_small: 4;
+
+
 /* Colors */
 $pillar_blue: transparentize(#043285, 0.65);
 
@@ -7,5 +12,11 @@ $extra_height: 40px;
 /* "Pillar" logo dimensions */
 $pillar_logo_height: 117px;
 $pillar_logo_width: 288px;
-$pillar_logo_scaled_height: $pillar_logo_height / 3;
-$pillar_logo_scaled_width: $pillar_logo_width / 3;
+$pillar_logo_scaled_height: $pillar_logo_height / $mobile;
+$pillar_logo_scaled_width: $pillar_logo_width / $mobile;
+
+/* Page banner dimensions */
+$page_banner_height: 1440px;
+$page_banner_width: 3600px;
+$page_banner_height_mobile: $page_banner_height / $mobile_small;
+$page_banner_width_mobile: $page_banner_width / $mobile_small;
