@@ -3,6 +3,7 @@ import {expect} from 'chai';
 import {shallow} from 'enzyme';
 import Application from '../../src/components/Application';
 import BannerMenu from '../../src/components/BannerMenu';
+import ShoutoutCard from '../../src/components/ShoutoutCard';
 
 describe('ApplicationComponent', () => {
   let props, 
@@ -39,6 +40,18 @@ describe('ApplicationComponent', () => {
 
     it('should pass props.banner_props to BannerMenu', () => {
       expect(bannerMenu.props()).to.eql(props.banner_props);
+    });
+  });
+
+  describe('ShoutoutCard child', () => {
+    let shoutoutCard;
+
+    beforeEach(() => {
+      shoutoutCard = renderedInstance.children(ShoutoutCard);
+    });
+
+    it('should have a ShoutoutCard child', () => {
+      expect(shoutoutCard).to.have.length(1);
     });
   });
 });
