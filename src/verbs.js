@@ -4,6 +4,8 @@ import Application from './components/Application';
 let verbs = {
   nouns: {},
   ext: {},
+
+  carouselTimer: null,
   
   setExternals: function(externals) {
     this.ext = Object.assign({}, externals);
@@ -22,7 +24,7 @@ let verbs = {
 
   startCarouselTimer: function() {
     this.nouns.current_frame_index = 0;
-    this.ext.timer.repeat(15000, () => {
+    this.carouselTimer = this.ext.timer.repeat(15000, () => {
       if (this.nouns.current_frame_index >= this.nouns.frames.length) {
         this.nouns.current_frame_index = 0;
       }
