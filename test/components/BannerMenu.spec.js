@@ -28,10 +28,27 @@ describe('Banner Menu Component', () => {
       expect(renderedInstance.contains(<div className="company-banner" />))
         .to.equal(true);
     });
+  });
+
+  describe('menu', () => {
+    let companyMenu;
+
+    beforeEach(() => { 
+      companyMenu = renderedInstance.children('.company-menu');
+    });
 
     it('should have an element with a css class of "company-menu"', () => {
-      expect(renderedInstance.contains(<div className="company-menu" />))
-        .to.equal(true);
+      expect(companyMenu).to.have.length(1);
+    });
+
+    it('should have the expected links', () => {
+        expect(companyMenu.contains(<ul>
+          <li>About</li>
+          <li>Work</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Contact</li>
+        </ul>)).to.equal(true);
     });
   });
 

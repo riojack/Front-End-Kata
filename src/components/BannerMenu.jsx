@@ -21,7 +21,15 @@ class BannerMenu extends React.Component {
   render() {
     return <div className="banner-menu">
       <div className="company-banner" />
-      <div className="company-menu" />
+      <div className="company-menu">
+        <ul>
+          <li>About</li>
+          <li>Work</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Contact</li>
+        </ul>
+      </div>
       {buildPageBanner(this.props)}
     </div>;
   }
