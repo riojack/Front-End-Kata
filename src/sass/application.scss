@@ -3,6 +3,7 @@
 
 @import './vars';
 @import './fonts';
+@import './animations';
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -22,12 +23,25 @@ body {
     }
 
     > .page-banner {
-      background-image: url('/assets/pillar-banner_2017-07-05/pillar-banner@3x.png');
+      background-image: url('/assets/pillar-banner_2017-07-05/pillar-banner@3x.png'), url('/assets/car-banner_2017-07-05/car-banner@3x.png'), url('/assets/oh-banner_2017-07-05/oh-banner@3x.png');
       height: $page_banner_height_mobile;
       width: 100%;
 
       background-size: $page_banner_width_mobile $page_banner_height_mobile;
       background-repeat: no-repeat;
+
+      background-position: 0 0, $page_banner_width_mobile 0, $page_banner_width_mobile*2 0;
+
+      @include transitionize-property(background-position-x);
+      @include transitionize-duration(1s);
+
+      &[data-frame-name='frame-2'] {
+        background-position-x: -$page_banner_width_mobile, 0, $page_banner_width_mobile;
+      }
+
+      &[data-frame-name='frame-3'] {
+        background-position-x: -$page_banner_width_mobile*2, -$page_banner_width_mobile, 0;
+      }
 
       > .small-quote, > .large-quote {
         color: #fff;

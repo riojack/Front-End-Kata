@@ -18,5 +18,5 @@ $pillar_logo_scaled_width: $pillar_logo_width / $mobile;
 /* Page banner dimensions */
 $page_banner_height: 1440px;
 $page_banner_width: 3600px;
-$page_banner_height_mobile: $page_banner_height / $mobile_small;
-$page_banner_width_mobile: $page_banner_width / $mobile_small;
+$page_banner_height_mobile: $page_banner_height / $mobile;
+$page_banner_width_mobile: $page_banner_width / $mobile;
