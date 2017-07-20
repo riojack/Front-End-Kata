@@ -16,7 +16,18 @@
 <script type="text/javascript" src="./application.js"></script>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
+  var externals = {
+    react: React,
+    reactdom: ReactDOM,
+    doc: window.document,
+    timer: window.PillarHelpers.timer
+  }
+  window.Pillar.setExternals(externals);
+
+  window.Pillar.nouns.frames = ['frame-1', 'frame-2', 'frame-3'];
+
   window.Pillar.doRender(document);
+  window.Pillar.startCarouselTimer();
 });
 </script>
 
