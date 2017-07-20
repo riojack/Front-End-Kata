@@ -6,8 +6,12 @@ import BannerMenu from '../../src/components/BannerMenu';
 describe('Banner Menu Component', () => {
   let renderedInstance;
 
+  function doRender(props) {
+    return shallow(<BannerMenu {...props} />);
+  }
+
   beforeEach(() => {
-    renderedInstance = shallow(<BannerMenu />);
+    renderedInstance = doRender({});
   });
 
   it('should be a DIV', () => {
@@ -44,6 +48,26 @@ describe('Banner Menu Component', () => {
         <span className="small-quote">In the past, technology enabled the business.</span>,
         <span className="large-quote">Today, technology is the business.</span>
       ])).to.equal(true);
+    });
+  });
+
+  describe('page banner frame tracking', () => {
+    it('should not have a data-frame-name attribute if props.frame_name is null', () => {
+      let pageBanner = renderedInstance.children('.page-banner');
+
+      expect(pageBanner.props()).to.not.have.property('data-frame-name');
+    });
+    
+    it('should set data-frame-name to props.frame_name', () => {
+      let props = {
+        frame_name: 'foo-frame'
+      };
+      renderedInstance = doRender(props);
+
+      let pageBanner = renderedInstance.children('.page-banner');
+
+      expect(pageBanner.props()).to.have.property('data-frame-name')
+        .that.equals(props.frame_name);
     });
   });
 });
