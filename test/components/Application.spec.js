@@ -5,10 +5,16 @@ import Application from '../../src/components/Application';
 import BannerMenu from '../../src/components/BannerMenu';
 
 describe('ApplicationComponent', () => {
-  let renderedInstance;
+  let props, 
+    renderedInstance;
 
   beforeEach(() => {
-    renderedInstance = shallow(<Application />);
+    props = {
+      banner_props: {
+        frame_name: 'foo-frame'
+      }
+    };
+    renderedInstance = shallow(<Application {...props} />);
   });
 
   it('should be a DIV', () => {
@@ -20,10 +26,19 @@ describe('ApplicationComponent', () => {
       .that.equals('application-container');
   });
 
-  describe('children', () => {
+  describe('BannerMenu child', () => {
+    let bannerMenu;
+
+    beforeEach(() => {
+      bannerMenu = renderedInstance.children(BannerMenu);
+    });
+
     it('should have a BannerMenu child', () => {
-      expect(renderedInstance.contains(<BannerMenu />))
-        .to.equal(true);
+      expect(bannerMenu).to.have.length(1);
+    });
+
+    it('should pass props.banner_props to BannerMenu', () => {
+      expect(bannerMenu.props()).to.eql(props.banner_props);
     });
   });
 });
