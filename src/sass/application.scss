@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 200;
 
   .banner-menu {
     > .company-banner {
@@ -86,6 +87,36 @@ body {
         font-size: 1.75rem;
         top: 95px;
         width: 98%;
+      }
+    }
+  }
+
+  .shoutout-card {
+    text-align: center;
+    padding: 75px 0;
+
+    > .first-line {
+      display: inline-block;
+      font-size: 1.1rem;
+      width: 90%;
+    }
+
+    > .noticeable-one-liner {
+      width: 100%;
+      display: inline-block;
+      color: $bold_blue;
+      font-size: 1.4rem;
+      font-family: 'Arial Black';
+      text-transform: uppercase;
+      margin: 5px 0 30px;
+    }
+
+    > .elevator-pitch {
+      width: 90%;
+      line-height: 1.5em;
+      display: inline-block;
+      > strong {
+        font-weight: 500;
       }
     }
   }
