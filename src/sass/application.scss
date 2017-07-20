@@ -6,7 +6,7 @@
 @import './animations';
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 
   .banner-menu {
     > .company-banner {
@@ -35,7 +35,6 @@ body {
           text-align: center;
           padding: 20px 0.35rem 7px;
           margin-bottom: 10px;
-          font-family: 'Raleway', sans-serif;
           font-weight: 200;
           cursor: pointer;
           
@@ -77,7 +76,6 @@ body {
       }
 
       > .small-quote {
-        font-family: 'Raleway', sans-serif;
         top: 90px;
       }
 
