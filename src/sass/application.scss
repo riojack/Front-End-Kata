@@ -125,4 +125,14 @@ body {
       }
     }
   }
+
+  .quick-card {
+    text-align: center;
+    padding: 40px 0;
+
+    > img {
+      width: 90%;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
 }
