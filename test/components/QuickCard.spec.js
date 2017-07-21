@@ -15,6 +15,7 @@ describe('QuickCard component', () => {
     props = {
       image: 'some.location/image.png',
       interrogative_sentence: 'how now brown cow',
+      interrogative_color: '#ff00dd',
       eye_catcher_sentence: 'whoa-ho, no bro!',
       blurb_sentence: 'foo bar baz'
     };
@@ -56,7 +57,7 @@ describe('QuickCard component', () => {
       expect(renderedInstance.contains([
         <img src={props.image} />,
         <div className="block-of-quotes">
-          <span className="interrogative-quote">{props.interrogative_sentence}</span>
+          <span className="interrogative-quote" style={{color: props.interrogative_color}}>{props.interrogative_sentence}</span>
           <span className="eye-catcher">{props.eye_catcher_sentence}</span>
           <span className="blurb">{props.blurb_sentence}</span>
         </div>
