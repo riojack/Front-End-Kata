@@ -160,5 +160,47 @@ body {
         text-align: right; 
       }
     }
-  } 
+  }
+
+  .footer {
+    background-color: #eaeaea;
+
+    > .site-map-and-social-links {
+      text-align: center;
+
+      > .site-map {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 10px 0 20px;
+        display: inline-block;
+        vertical-align: top;
+        list-style: none;
+        text-align: left;
+
+        > li {
+          padding: 5px 0;
+        }
+
+        &:nth-child(1) {
+          width: 33%;
+          padding-left: 15px;
+        }
+        &:nth-child(2) {width: 28%;}
+        &:nth-child(3) {
+          width: 19%;
+          padding-right: 5px;
+        }
+      }
+
+      > .social-links {
+        margin: 0;
+        padding: 0;
+        display: none;
+      }
+
+      > .copyright {
+        display: block;
+      }
+    }
+  }
 }
