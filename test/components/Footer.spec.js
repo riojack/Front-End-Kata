@@ -49,11 +49,11 @@ describe('Footer component', () => {
           <li>Contact</li>
         </ul>,
         <ul className="social-links">
-          <li><img className="to-facebook" /></li>
-          <li><img className="to-snapchat" /></li>
-          <li><img className="to-linkedin" /></li>
-          <li><img className="to-twitter" /></li>
-          <li><img className="to-youtube" /></li>
+          <li className="to-facebook" />
+          <li className="to-snapchat" />
+          <li className="to-linkedin" />
+          <li className="to-twitter" />
+          <li className="to-youtube" />
         </ul>,
         <span className="copyright">Copyright &copy; 2017 Pillar Technology Group, LLC</span>
       ])).to.equal(true);
