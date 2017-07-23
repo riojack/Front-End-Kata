@@ -5,6 +5,7 @@ import Application from '../../src/components/Application';
 import BannerMenu from '../../src/components/BannerMenu';
 import ShoutoutCard from '../../src/components/ShoutoutCard';
 import QuickCard from '../../src/components/QuickCard';
+import Footer from '../../src/components/Footer';
 
 describe('ApplicationComponent', () => {
   let props, 
@@ -79,6 +80,12 @@ describe('ApplicationComponent', () => {
           eye_catcher_sentence="Here, every idea has the ability to turn into a great one." 
           blurb_sentence="A philosophy&mdash;sometimes in four walls, sometimes not.  It's the business strategists, creatives, software artisans and clients collaborating to solve business problems in a no-constraints think tank.  It's where and how we work&mdash;mentally and physicall.  Wherever our work takes us, we bring the Forge mindset with us." />
       ])).to.equal(true);
+    });
+  });
+
+  describe('Footer child', () => {
+    it('should have 1 Footer child', () => {
+      expect(renderedInstance.contains(<Footer />)).to.equal(true);
     });
   });
 });

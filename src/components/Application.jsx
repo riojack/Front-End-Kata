@@ -2,6 +2,7 @@ import React from 'react';
 import BannerMenu from './BannerMenu';
 import ShoutoutCard from './ShoutoutCard';
 import QuickCard from './QuickCard';
+import Footer from './Footer';
 
 class Application extends React.Component {
   render() {
@@ -27,6 +28,7 @@ class Application extends React.Component {
           interrogative_color="#20aaf3"
           eye_catcher_sentence="Here, every idea has the ability to turn into a great one." 
           blurb_sentence="A philosophy&mdash;sometimes in four walls, sometimes not.  It's the business strategists, creatives, software artisans and clients collaborating to solve business problems in a no-constraints think tank.  It's where and how we work&mdash;mentally and physicall.  Wherever our work takes us, we bring the Forge mindset with us." />
+        <Footer />
     </div>;
   }
 }
