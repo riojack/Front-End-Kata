@@ -40,6 +40,7 @@
     "sass-mediaqueries": "^1.6.1",
     "sinon": "^2.3.8",
     "style-loader": "^0.18.2",
+    "svg-url-loader": "^2.1.1",
     "webpack": "^3.3.0"
   }
 }

@@ -25,25 +25,34 @@ module.exports = {
         }
       },
       {
+        test: /\.svg/,
+        use: {
+          loader: 'svg-url-loader',
+          options: {}
+        }
+      },
+      {
         test: /\.css$|\.scss$/,
         exclude: /node_modules/,
         loaders: [{
-          loader: 'style-loader'
-        }, {
-          loader: 'css-loader',
-          options: {
-            minimize: {
-              discardComments: {
-                removeAll: true
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              minimize: {
+                discardComments: {
+                  removeAll: true
+                }
               }
             }
+          }, {
+            loader: 'sass-loader',
+            options: {
+              outputStyle: 'compressed'
+            }
           }
-        }, {
-          loader: 'sass-loader',
-          options: {
-            outputStyle: 'compressed'
-          }
-        }],
+        ],
       }
     ]
   },
