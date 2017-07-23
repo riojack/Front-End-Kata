@@ -170,6 +170,7 @@ body {
 
       > .site-map {
         font-size: 0.8rem;
+        font-weight: bolder;
         margin: 0;
         padding: 10px 0 20px;
         display: inline-block;
@@ -195,7 +196,22 @@ body {
       > .social-links {
         margin: 0;
         padding: 0;
-        display: none;
+         
+        > li {
+          height: 32px;
+          width: 32px;
+          border-radius: (32px/2);
+          margin: 0 3px;
+          display: inline-block;
+          background-color: transparentize(rgb(105,105,105), 0.85);
+          background-repeat: no-repeat;
+          background-position: center center;
+
+          &.to-facebook {
+            background-image: url('../../assets/social/facebook.svg');
+            background-size: 20px 20px;
+          }
+        }
       }
 
       > .copyright {
