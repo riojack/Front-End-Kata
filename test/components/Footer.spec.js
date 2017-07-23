@@ -50,7 +50,7 @@ describe('Footer component', () => {
         </ul>,
         <ul className="social-links">
           <li className="to-facebook" />
-          <li className="to-snapchat" />
+          <li className="to-instagram" />
           <li className="to-linkedin" />
           <li className="to-twitter" />
           <li className="to-youtube" />
