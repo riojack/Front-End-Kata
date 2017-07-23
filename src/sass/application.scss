@@ -206,31 +206,27 @@ body {
           background-color: transparentize(rgb(105,105,105), 0.85);
           background-repeat: no-repeat;
           background-position: center center;
-
+          background-size: 20px 20px;
+          
           // Social icon svg source: https://codepen.io/ruandre/pen/howFi
           &.to-facebook {
             background-image: url('../../assets/social/facebook.svg');
-            background-size: 20px 20px;
           }
 
           &.to-instagram {
             background-image: url('../../assets/social/instagram.svg');
-            background-size: 20px 20px;
           }
 
           &.to-linkedin {
             background-image: url('../../assets/social/linkedin.svg');
-            background-size: 20px 20px;
           }
 
           &.to-twitter {
             background-image: url('../../assets/social/twitter.svg');
-            background-size: 20px 20px;
           }
 
           &.to-youtube {
             background-image: url('../../assets/social/youtube.svg');
-            background-size: 20px 20px;
           }
         }
       }
