@@ -164,6 +164,7 @@ body {
 
   .footer {
     background-color: #eaeaea;
+    padding: 12px 0 35px;
 
     > .site-map-and-social-links {
       text-align: center;
@@ -172,7 +173,7 @@ body {
         font-size: 0.8rem;
         font-weight: bolder;
         margin: 0;
-        padding: 10px 0 20px;
+        padding: 0 0 20px 0;
         display: inline-block;
         vertical-align: top;
         list-style: none;
@@ -233,6 +234,8 @@ body {
 
       > .copyright {
         display: block;
+        font-size: 0.65rem;
+        margin-top: 10px;
       }
     }
   }
