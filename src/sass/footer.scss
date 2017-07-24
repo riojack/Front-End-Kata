@@ -14,16 +14,20 @@
       vertical-align: top;
       list-style: none;
       text-align: left;
-      >li {
+
+      > li {
         padding: 5px 0;
       }
+
       &:nth-child(1) {
         width: 33%;
         padding-left: 15px;
       }
+
       &:nth-child(2) {
         width: 28%;
       }
+
       &:nth-child(3) {
         width: 19%;
         padding-right: 5px;
@@ -41,26 +45,26 @@
         margin: 0 3px;
         display: inline-block;
         background-color: transparentize(rgb(105, 105, 105), 0.85);
-        background-repeat: no-repeat;
         background-position: center center;
         background-size: 20px 20px; // Social icon svg source: https://codepen.io/ruandre/pen/howFi
-        
+        background-repeat: no-repeat;
+
         &.to-facebook {
           background-image: url('../../assets/social/facebook.svg');
         }
-        
+
         &.to-instagram {
           background-image: url('../../assets/social/instagram.svg');
         }
-        
+
         &.to-linkedin {
           background-image: url('../../assets/social/linkedin.svg');
         }
-        
+
         &.to-twitter {
           background-image: url('../../assets/social/twitter.svg');
         }
-        
+
         &.to-youtube {
           background-image: url('../../assets/social/youtube.svg');
         }

@@ -1,3 +1,5 @@
+@import './vars';
+
 .shoutout-card {
   text-align: center;
   padding: 75px 0;
@@ -7,13 +9,13 @@
     font-size: 1.1rem;
     width: 90%;
   }
-  
+
   > .noticeable-one-liner {
     width: 100%;
     display: inline-block;
     color: $bold_blue;
     font-size: 1.4rem;
-    font-family: 'Arial Black';
+    font-family: 'Arial Black', sans-serif;
     text-transform: uppercase;
     margin: 5px 0 30px;
   }
@@ -22,6 +24,7 @@
     width: 90%;
     line-height: 1.5em;
     display: inline-block;
+
     > strong {
       font-weight: 500;
     }
