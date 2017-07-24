@@ -1,18 +1,22 @@
 .quick-card {
   text-align: center;
   padding: 40px 0;
-  >img {
+
+  > img {
     width: 100%;
   }
-  >.block-of-quotes {
+
+  > .block-of-quotes {
     text-align: left;
     padding: 10px 24px 0 24px;
-    >.interrogative-quote {
+
+    > .interrogative-quote {
       display: block;
       font-weight: bold;
       padding: 0 0 6px 0;
     }
-    >.eye-catcher {
+
+    > .eye-catcher {
       display: block;
       padding: 6px 0 30px 0;
       text-transform: uppercase;
@@ -20,13 +24,15 @@
       font-weight: bold;
       font-size: 1.2rem;
     }
-    >.blurb {
+
+    > .blurb {
       display: block;
       line-height: 1.5em;
     }
   }
+
   &[data-direction-mode='right'] {
-    >.block-of-quotes {
+    > .block-of-quotes {
       text-align: right;
     }
   }

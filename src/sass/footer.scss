@@ -1,9 +1,11 @@
 .footer {
   background-color: #eaeaea;
   padding: 12px 0 35px;
-  >.site-map-and-social-links {
+
+  > .site-map-and-social-links {
     text-align: center;
-    >.site-map {
+
+    > .site-map {
       font-size: 0.8rem;
       font-weight: bolder;
       margin: 0;
@@ -27,10 +29,12 @@
         padding-right: 5px;
       }
     }
-    >.social-links {
+
+    > .social-links {
       margin: 0;
       padding: 0;
-      >li {
+
+      > li {
         height: 32px;
         width: 32px;
         border-radius: (32px/2);
@@ -40,24 +44,30 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 20px 20px; // Social icon svg source: https://codepen.io/ruandre/pen/howFi
+        
         &.to-facebook {
           background-image: url('../../assets/social/facebook.svg');
         }
+        
         &.to-instagram {
           background-image: url('../../assets/social/instagram.svg');
         }
+        
         &.to-linkedin {
           background-image: url('../../assets/social/linkedin.svg');
         }
+        
         &.to-twitter {
           background-image: url('../../assets/social/twitter.svg');
         }
+        
         &.to-youtube {
           background-image: url('../../assets/social/youtube.svg');
         }
       }
     }
-    >.copyright {
+
+    > .copyright {
       display: block;
       font-size: 0.65rem;
       margin-top: 10px;

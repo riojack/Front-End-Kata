@@ -1,5 +1,5 @@
 .banner-menu {
-  >.company-banner {
+  > .company-banner {
     background-image: url('/assets/pillar-logo_2017-07-18/pillar-logo@3x.png');
     height: $pillar_logo_scaled_height + $extra_height;
     width: 100%;
@@ -9,19 +9,22 @@
     border-bottom: 1px solid transparentize(#4f4c4d, 0.45);
     cursor: pointer;
   }
-  >.company-menu {
-    >ul {
+  
+  > .company-menu {
+    > ul {
       list-style: none;
       margin: 0;
       padding: 0;
       text-align: center;
-      >li {
+
+      > li {
         display: inline-block;
         text-align: center;
         padding: 20px 0.35rem 7px;
         margin-bottom: 10px;
         font-weight: 200;
         cursor: pointer;
+
         &:first-child {
           font-weight: 700;
           border-bottom: 3px solid #8dc63f;
@@ -29,33 +32,40 @@
       }
     }
   }
-  >.page-banner {
+  
+  > .page-banner {
     background-image: url('/assets/pillar-banner_2017-07-05/pillar-banner@3x.png'), url('/assets/car-banner_2017-07-05/car-banner@3x.png'), url('/assets/oh-banner_2017-07-05/oh-banner@3x.png');
     height: $page_banner_height_mobile;
     width: 100%;
     background-size: $page_banner_width_mobile $page_banner_height_mobile;
     background-repeat: no-repeat;
     background-position: 0 0, $page_banner_width_mobile 0, $page_banner_width_mobile*2 0;
+    
     @include transitionize-property(background-position-x);
     @include transitionize-duration(1s);
+
     &[data-frame-name='frame-2'] {
       background-position-x: -$page_banner_width_mobile, 0, $page_banner_width_mobile;
     }
+
     &[data-frame-name='frame-3'] {
       background-position-x: -$page_banner_width_mobile*2, -$page_banner_width_mobile, 0;
     }
-    >.small-quote,
-    >.large-quote {
+
+    > .small-quote,
+    > .large-quote {
       color: #fff;
       display: block;
       position: relative;
       left: 8px;
       width: 325px;
     }
-    >.small-quote {
+
+    > .small-quote {
       top: 90px;
     }
-    >.large-quote {
+
+    > .large-quote {
       font-family: 'Arial Black', 'Raleway-Bold';
       text-transform: uppercase;
       font-weight: bold;

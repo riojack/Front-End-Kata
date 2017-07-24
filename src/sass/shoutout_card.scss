@@ -1,12 +1,14 @@
 .shoutout-card {
   text-align: center;
   padding: 75px 0;
-  >.first-line {
+
+  > .first-line {
     display: inline-block;
     font-size: 1.1rem;
     width: 90%;
   }
-  >.noticeable-one-liner {
+  
+  > .noticeable-one-liner {
     width: 100%;
     display: inline-block;
     color: $bold_blue;
@@ -15,11 +17,12 @@
     text-transform: uppercase;
     margin: 5px 0 30px;
   }
-  >.elevator-pitch {
+
+  > .elevator-pitch {
     width: 90%;
     line-height: 1.5em;
     display: inline-block;
-    >strong {
+    > strong {
       font-weight: 500;
     }
   }
