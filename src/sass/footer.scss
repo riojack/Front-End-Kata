@@ -1,0 +1,66 @@
+.footer {
+  background-color: #eaeaea;
+  padding: 12px 0 35px;
+  >.site-map-and-social-links {
+    text-align: center;
+    >.site-map {
+      font-size: 0.8rem;
+      font-weight: bolder;
+      margin: 0;
+      padding: 0 0 20px 0;
+      display: inline-block;
+      vertical-align: top;
+      list-style: none;
+      text-align: left;
+      >li {
+        padding: 5px 0;
+      }
+      &:nth-child(1) {
+        width: 33%;
+        padding-left: 15px;
+      }
+      &:nth-child(2) {
+        width: 28%;
+      }
+      &:nth-child(3) {
+        width: 19%;
+        padding-right: 5px;
+      }
+    }
+    >.social-links {
+      margin: 0;
+      padding: 0;
+      >li {
+        height: 32px;
+        width: 32px;
+        border-radius: (32px/2);
+        margin: 0 3px;
+        display: inline-block;
+        background-color: transparentize(rgb(105, 105, 105), 0.85);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 20px 20px; // Social icon svg source: https://codepen.io/ruandre/pen/howFi
+        &.to-facebook {
+          background-image: url('../../assets/social/facebook.svg');
+        }
+        &.to-instagram {
+          background-image: url('../../assets/social/instagram.svg');
+        }
+        &.to-linkedin {
+          background-image: url('../../assets/social/linkedin.svg');
+        }
+        &.to-twitter {
+          background-image: url('../../assets/social/twitter.svg');
+        }
+        &.to-youtube {
+          background-image: url('../../assets/social/youtube.svg');
+        }
+      }
+    }
+    >.copyright {
+      display: block;
+      font-size: 0.65rem;
+      margin-top: 10px;
+    }
+  }
+}
