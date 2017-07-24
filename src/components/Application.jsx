@@ -5,6 +5,10 @@ import QuickCard from './QuickCard';
 import Footer from './Footer';
 
 class Application extends React.Component {
+  componentDidMount() {
+    require('../sass/application.scss');
+  }
+
   render() {
     return <div className="application-container">
       <BannerMenu {...this.props.banner_props} />

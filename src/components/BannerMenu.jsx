@@ -18,6 +18,10 @@ function buildPageBanner(props) {
 }
 
 class BannerMenu extends React.Component {
+  componentDidMount() {
+    require('../sass/banner_menu.scss');
+  }
+
   render() {
     return <div className="banner-menu">
       <div className="company-banner" />

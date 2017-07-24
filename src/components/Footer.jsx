@@ -1,6 +1,10 @@
 import React from 'react';
 
 class Footer extends React.Component {
+  componentDidMount() {
+    require('../sass/footer.scss');
+  }
+
   render() {
     return <div className="footer">
       <div className="site-map-and-social-links">

@@ -5,6 +5,10 @@ function getDirectionMode(props) {
 }
 
 class QuickCard extends React.Component {
+  componentDidMount() {
+    require('../sass/quick_card.scss');
+  }
+
   render() {
     return <div className="quick-card" data-direction-mode={getDirectionMode(this.props)}>
       <img src={this.props.image} />

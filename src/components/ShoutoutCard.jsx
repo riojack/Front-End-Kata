@@ -1,6 +1,10 @@
 import React from 'react';
 
 class ShoutoutCard extends React.Component {
+  componentDidMount() {
+    require('../sass/shoutout_card.scss');
+  }
+
   render() {
     return <div className="shoutout-card">
       <span className="first-line">Are you ready to change?</span>
