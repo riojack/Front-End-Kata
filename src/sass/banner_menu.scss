@@ -1,5 +1,6 @@
 @import './vars';
 @import './animations';
+@import '~sass-mediaqueries/media-queries';
 
 .banner-menu {
   > .company-banner {
@@ -11,9 +12,24 @@
     width: 100%;
     border-bottom: 1px solid transparentize(#4f4c4d, 0.45);
     cursor: pointer;
+
+    @include ipad() {
+      height: $pillar_logo_scaled_height + $more_extra_height;
+      background-position-x: 55px;
+      display: inline-block;
+      width: 50%;
+      vertical-align: middle;
+      border-bottom-width: 0;
+    }
   }
 
   > .company-menu {
+    @include ipad() {
+      display: inline-block;
+      width: 50%;
+      vertical-align: middle;
+    }
+
     > ul {
       list-style: none;
       margin: 0;
@@ -27,6 +43,16 @@
         margin-bottom: 10px;
         font-weight: 200;
         cursor: pointer;
+
+        @include ipad() {
+          padding-left: 1rem;
+          padding-right: 1rem;
+
+          @include portrait() {
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
+          }
+        }
 
         &:first-child {
           font-weight: 700;
@@ -47,17 +73,29 @@
     @include transitionize-property(background-position-x);
     @include transitionize-duration(1s);
 
+    @include ipad() {
+      background-position: 0 0, $page_banner_width_ipad 0, $page_banner_width_ipad*2 0;
+      background-size: $page_banner_width_ipad $page_banner_height_ipad;
+      height: $page_banner_height_ipad;
+    }
+
     &[data-frame-name='frame-2'] {
       background-position-x: -$page_banner_width_mobile, 0, $page_banner_width_mobile;
+      @include ipad() {
+        background-position-x: -$page_banner_width_ipad, 0, $page_banner_width_ipad;
+      }
     }
 
     &[data-frame-name='frame-3'] {
       background-position-x: -$page_banner_width_mobile*2, -$page_banner_width_mobile, 0;
+      @include ipad() {
+        background-position-x: -$page_banner_width_ipad*2, -$page_banner_width_ipad, 0;
+      }
     }
 
     > .small-quote,
     > .large-quote {
-      color: #fff;
+      color: $pillar_white;
       display: block;
       position: relative;
       left: 8px;
@@ -66,6 +104,10 @@
 
     > .small-quote {
       top: 90px;
+      @include ipad() {
+        font-size: 1.75em;
+        width: 100%;
+      }
     }
 
     > .large-quote {
@@ -75,6 +117,16 @@
       font-size: 1.75rem;
       top: 95px;
       width: 98%;
+
+      @include ipad() {
+        color: transparentize($pillar_white, .05);
+        font-size: 3.75em;
+        width: 95%;
+
+        @include portrait() {
+          font-size: 3.55em;
+        }
+      }
     }
   }
 }

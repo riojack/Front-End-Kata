@@ -2,12 +2,16 @@
 $mobile: 3;
 $mobile_small: 4;
 
+$ipad: $mobile;
+
 /* Colors */
 $pillar_blue: transparentize(#043285, .65);
 $bold_blue: transparentize(#0846a0, .1);
+$pillar_white: #fff;
 
 /* Faux gutter values */
 $extra_height: 20px;
+$more_extra_height: 3*$extra_height;
 
 /* "Pillar" logo dimensions */
 $pillar_logo_height: 117px;
@@ -20,3 +24,5 @@ $page_banner_height: 1440px;
 $page_banner_width: 3600px;
 $page_banner_height_mobile: $page_banner_height / $mobile_small;
 $page_banner_width_mobile: $page_banner_width / $mobile_small;
+$page_banner_height_ipad: $page_banner_height / $ipad;
+$page_banner_width_ipad: $page_banner_width / $ipad;
